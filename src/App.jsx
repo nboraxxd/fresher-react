@@ -1,12 +1,14 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Outlet } from 'react-router-dom'
-import BookPage from './pages/book'
-import ContactPage from './pages/contact'
-import LoginPage from './pages/login'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Home from './components/Home'
+import BookPage from './pages/book/Book'
+import ContactPage from './pages/contact/Contact'
+import LoginPage from './pages/login/Login'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import Home from './components/Home/Home'
+import RegisterPage from './pages/register/Register'
+import './styles/reset.css'
 
 const Layout = () => {
   return (
@@ -39,6 +41,10 @@ export default function App() {
     {
       path: '/login',
       element: <LoginPage />,
+    },
+    {
+      path: '/register',
+      element: <RegisterPage />,
     },
   ])
 
