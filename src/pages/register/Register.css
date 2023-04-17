@@ -1,0 +1,14 @@
+.wrapper {
+  padding-top: 35px;
+}
+
+.register {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px 15px;
+}
+
+.register-title {
+  font-size: 36px !important;
+  text-align: center;
+}
